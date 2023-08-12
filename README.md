@@ -6,7 +6,7 @@ This package will scrape from [BMKG](https://bmkg.go.id) to get latest quake hap
 
 This package using BeautifulSoup4 and Request, for creating output JSON which ready to use in web or mobile applications.
 
-##HOW TO USE?
+## HOW TO USE?
 ```
 import gempaterkini
 
@@ -16,5 +16,5 @@ if __name__ == '__main__':
     gempaterkini.tampilkan_data(result)
 ```
 
-#AUTHOR
+# AUTHOR
 Mishbahussuduri
