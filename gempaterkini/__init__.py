@@ -1,5 +1,7 @@
 import requests
-from bs4 import BeautifulSoup
+import bs4
+
+description = 'To get the latest earthquake in Indonesia from BMKG.go.id'
 
 
 def ekstraksi_data():
@@ -18,7 +20,7 @@ def ekstraksi_data():
     except Exception:
         return None
     if content.status_code == 200:
-        soup = BeautifulSoup(content.text,'html.parser')
+        soup = bs4.BeautifulSoup(content.text,'html.parser')
 
         result = soup.find('span', {'class': 'waktu'})
         result = result.text.split(', ')
